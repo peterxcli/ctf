@@ -14,7 +14,7 @@ c = int(file_content.split("c: ")[1])
 
 # Calculate n and phi(n)
 n = p * q
-phi_n = (p - 1) * (q - 1)
+phi_n = (p - 1) * (q - 1) ## ϕ(N)
 
 # Compute the private exponent d
 d = mod_inverse(e, phi_n)

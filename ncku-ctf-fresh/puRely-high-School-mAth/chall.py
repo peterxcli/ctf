@@ -1,3 +1,7 @@
+# (x1, 0), (x2, 0) -> (x1, x2, ..., xn)
+# (x - x1) * (x - x2) = 0
+# x^n + ax^(n-1) ..... + cx^2 + x + 1 = 0
+
 from Crypto.Util.number import getPrime, bytes_to_long
 from numpy.polynomial import polynomial as P
 from secret import FLAG
